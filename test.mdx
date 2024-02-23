@@ -1,3 +1,64 @@
+<CardGroup cols={1}>
+  <Card
+    title="API Documentation (yet to link)"
+    icon="code"
+  >
+    Get to know about different API's
+  </Card>
+  <Card
+    title="Preview Changes"
+    icon="image"
+    href="https://mintlify.com/docs/development"
+  >
+    Preview your changes before you push to make sure they're perfect
+  </Card>
+</CardGroup>
+
+## Make it yours
+
+Update your docs to your brand and add valuable content for the best user conversion.
+
+<CardGroup cols={2}>
+  <Card
+    title="Customize Style"
+    icon="palette"
+    href="https://mintlify.com/docs/settings/global"
+  >
+    Customize your docs to your company's colors and brands
+  </Card>
+  <Card
+    title="Reference APIs"
+    icon="code"
+    href="https://mintlify.com/docs/api-playground/openapi"
+  >
+    Automatically generate endpoints from an OpenAPI spec
+  </Card>
+  <Card
+    title="Add Components"
+    icon="screwdriver-wrench"
+    href="https://mintlify.com/docs/components/accordion"
+  >
+    Build interactive features and designs to guide your users
+  </Card>
+  <Card
+    title="Get Inspiration"
+    icon="stars"
+    href="https://mintlify.com/customers"
+  >
+    Check out our showcase of our favorite documentation
+  </Card>
+</CardGroup>
+
+# Resource (Tested)
+
+Required Generic Properties:
+
+| Property | Description                           |
+| -------- | ------------------------------------- |
+| Name     | Full name of user                     |
+| Age      | Reported age                          |
+| Joined   | Whether the user joined the community |
+
 ---
 title: 'Quickstart'
 description: 'Start building awesome documentation in under 5 minutes'
@@ -84,3 +145,29 @@ Add content directly in your files with MDX syntax and React components. You can
 </Card>
 
 </CardGroup>
+
+
+<Card
+  title="Plant Store Endpoints"
+  icon="leaf"
+  href="https://github.com/mintlify/starter/blob/main/api-reference/openapi.json"
+>
+  View the OpenAPI specification file
+</Card>
+
+## Authentication
+
+All API endpoints are authenticated using Bearer tokens and picked up from the specification file.
+
+```json
+"security": [
+  {
+    "bearerAuth": []
+  }
+]
+```
+
+<Note>
+  If you're not looking to build API reference documentation, you can delete
+  this section by removing the api-reference folder.
+</Note>

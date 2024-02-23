@@ -1,24 +1,24 @@
 {
   "$schema": "https://mintlify.com/schema.json",
-  "name": "Starter Kit",
+  "name": "RLEF Documentation",
   "logo": {
-    "dark": "/logo/dark.svg",
-    "light": "/logo/light.svg"
+    "dark": "/logo/rlefai_dark.png",
+    "light": "/logo/rlefai_light.png"
   },
-  "favicon": "/favicon1.svg",
+  "favicon": "/favicon.svg",
   "colors": {
-    "primary": "#0D9373",
-    "light": "#07C983",
-    "dark": "#0D9373",
+    "primary": "#008D9C",
+    "light": "#06abbd",
+    "dark": "#0e727d",
     "anchors": {
-      "from": "#0D9373",
-      "to": "#07C983"
+      "from": "#0e727d",
+      "to": "#06abbd"
     }
   },
   "topbarLinks": [
     {
       "name": "Support",
-      "url": "mailto:hi@mintlify.com"
+      "url": "mailto:navjot.singh@techolution.com"
     }
   ],
   "topbarCtaButton": {
@@ -33,39 +33,18 @@
   ],
   "anchors": [
     {
-      "name": "Documentation",
-      "icon": "book-open-cover",
-      "url": "https://mintlify.com/docs"
-    },
-    {
       "name": "Community",
       "icon": "slack",
-      "url": "https://mintlify.com/community"
-    },
-    {
-      "name": "Blog",
-      "icon": "newspaper",
-      "url": "https://mintlify.com/blog"
+      "url": "https://join.slack.com/share/enQtNjcxMzcwMzQxNDcyMC1lNDdmMTJiZDIwOGZiNWY2ZWZjMGRjMGVlZmMyZTY0NWYxYWJhNDNlOTU0OWFkYTkwNjEwNjJhNWJkYjM0NGEz"
     }
   ],
   "navigation": [
     {
       "group": "Get Started",
       "pages": [
+        "test",
         "introduction",
-        "quickstart",
-        "development"
-      ]
-    },
-    {
-      "group": "Essentials",
-      "pages": [
-        "essentials/markdown",
-        "essentials/code",
-        "essentials/images",
-        "essentials/settings",
-        "essentials/navigation",
-        "essentials/reusable-snippets"
+        "Authentication"
       ]
     },
     {
@@ -77,15 +56,56 @@
     {
       "group": "Endpoint Examples",
       "pages": [
-        "api-reference/endpoint/get",
-        "api-reference/endpoint/create",
-        "api-reference/endpoint/delete"
+        {"group": "Project",
+        "pages": [
+          "api-reference/Project/post",
+          "api-reference/Project/get"
+        ]},
+        {"group": "Model",
+        "pages": [
+          "api-reference/Model/post",
+          "api-reference/Model/get"
+        ]},
+        {"group": "Resources",
+        "pages": [
+          "api-reference/Resources/post",
+          "api-reference/Resources/get"
+        ]},
+        {"group": "dataSetCollection",
+        "pages": [
+          "api-reference/dataSetCollection/post",
+          "api-reference/dataSetCollection/get"
+        ]},
+        {"group": "modelCollection",
+        "pages": [
+          "api-reference/modelCollection/post",
+          "api-reference/modelCollection/get"
+        ]},
+        {"group": "testCollection",
+        "pages": [
+          "api-reference/testCollection/post",
+          "api-reference/testCollection/get"
+        ]},
+        {"group": "user",
+        "pages": [
+          "api-reference/user/post",
+          "api-reference/user/get"
+        ]},
+        {"group": "CloudStorage",
+        "pages": [
+          "api-reference/CloudStorage/post",
+          "api-reference/CloudStorage/get"
+        ]},
+        {"group": "Copilot Resources",
+        "pages": [
+          "api-reference/CopilotResources/post",
+          "api-reference/CopilotResources/get"
+        ]}
       ]
     }
   ],
   "footerSocials": {
-    "twitter": "https://twitter.com/mintlify",
-    "github": "https://github.com/mintlify",
-    "linkedin": "https://www.linkedin.com/company/mintsearch"
+    "github": "https://github.com/Techolution",
+    "linkedin": "https://in.linkedin.com/company/techolution-mobi"
   }
 }
