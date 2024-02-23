@@ -52,7 +52,7 @@
     {
       "group": "Get Started",
       "pages": [
-        "API Documentation",
+        "API / Documentation",
         "introduction",
         "quickstart",
         "development"
